@@ -1,8 +1,8 @@
 /**
  * 基于Viewport属性的移动WEB弹性布局解决方案
  * @author ken
- * @param  {number} baseSize 原始尺寸
- * @param  {number} maxSize  最大尺寸
+ * @param  {number} baseSize 原始尺寸。默认值：640
+ * @param  {number} maxSize  最大尺寸，通过次参数来限制最大的缩放比例。默认值：undefined（不限制）
  */
 var mobileViewportLayout = function(baseSize, maxSize) {
     baseSize = parseFloat(baseSize) || 640;
