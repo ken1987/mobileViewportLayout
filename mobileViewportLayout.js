@@ -26,6 +26,7 @@ var mobileViewportLayout = function(baseSize, maxSize) {
     var setViewport = function() {
         var scale = getScale();
         el.setAttribute('content',
+            'width=device-width,'+
             'initial-scale=' + scale +
             ', maximum-scale=' + scale +
             ', minimum-scale=' + scale +
